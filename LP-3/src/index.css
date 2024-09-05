@@ -1,0 +1,338 @@
+/*-----------------------------------*\
+  #style.css
+\*-----------------------------------*/
+
+/**
+ * copyright 2024 bassu
+ */
+
+
+
+
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
+:root {
+
+  /**
+   * COLORS
+   */
+  --background: #E5E5E5;
+  --on-background: #252525;
+  --black: #252525;
+
+  /**
+   * TYPPGRAPHY
+   */
+  --font-family: "Roboto", sans-serif;
+
+  /* font family */
+  --fs-base: 62.5%;
+  --fs-headline-large: 5rem;
+  --fs-headline-medium: 2.5rem;
+  --fs-label-medium: 1.5rem;
+
+  /* line height */
+  --lh-headline-large: 60px;
+
+  /* font weight */
+  --weight-bold: 700;
+  --weight-semiBold: 600;
+  --weight-regular: 400;
+
+  /**
+   * Border radius 
+   */
+
+   --radius-small: 12px;
+   --radius-medium: 16px;
+   --radius-large: 200px;
+
+  /**
+   * BOX SHADOW
+   */
+   --shadow-1: 0px 2px 4px 0px #00000033;
+}
+
+
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li { list-style: none; }
+
+a,
+img,
+span,
+button { display: block; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img { height: auto; }
+
+button {
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+html {
+  font-family: var(--font-family);
+  font-size: var(--fs-base);
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--on-background);
+  font-size: var(--fs-label-medium);
+}
+
+
+/*-----------------------------------*\
+  #TYPOGRAPHY
+\*-----------------------------------*/
+
+.headline-large {
+  font-size: var(--fs-headline-large);
+  font-weight: var(--weight-semiBold);
+  line-height: var(--lh-headline-large);
+}
+
+.label-medium {
+  font-size: var(--fs-label-medium);
+  color: var(--on-gray);
+  line-height: normal;
+}
+
+.headline-medium {
+  font-size: var(--fs-headline-medium);
+  color: var(--gray);
+  font-weight: var(--weight-semiBold);
+}
+
+
+/*-----------------------------------*\
+  #REUSED STYLE
+\*-----------------------------------*/
+
+.main {
+  padding-block: 12px;
+}
+
+.container {
+  padding-inline: 16px;
+  margin-inline: auto;
+}
+
+.img-holder {
+  aspect-ratio: var(--width) / var(--height);
+  border-radius: var(--radius-small);
+  background-color: var(--black);
+  overflow: hidden;
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn {
+  height: 60px;
+  padding-inline: 50px;
+  margin-block: 12px;
+  font-weight: var(--weight-regular);
+  border-radius: var(--radius-medium);
+  display: grid;
+  place-content: center;
+  max-width: max-content;
+  box-shadow: var(--shadow-1);
+}
+
+.btn-primary {
+  background-color: var(--on-background);
+  color: var(--background);
+  margin-inline: auto;
+}
+
+
+/*-----------------------------------*\
+  #HERO
+\*-----------------------------------*/
+
+.header-text-container {
+  margin-block-start: 32px;
+  margin-block-end: 16px;
+  text-align: center;
+}
+
+.header-text .text {
+  margin-block: 12px;
+}
+
+
+
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+/**
+ * responsive for larger than 768px screen
+ */
+
+ @media (min-width: 768px) {
+
+  /**
+   * CUSTOM PROPERTY
+   */
+
+  .btn {
+    height: 42px;
+    margin-block: 12px;
+  }
+
+  /**
+   * REUSED STYLE
+   */
+
+    .label-medium {
+      line-height: auto;
+    }
+   .container {
+    max-width: 768px;
+    margin-inline: auto;
+   }
+
+   /**
+    * HERO
+    */
+
+  .header-text-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 42px;
+  }
+
+  .header-text {
+    width: 45ch;
+    margin-inline: auto;
+  }
+
+ }
+
+ 
+ 
+/**
+ * responsive for larger than 992px screen
+ */
+
+@media (min-width: 992px) {
+ 
+  /**
+   * CUSTOM PROPERTY
+   */
+
+  :root {
+    
+    /**
+     * TYPOGRAPHY
+     */
+
+    /* font size */
+    --fs-headline-large: 4rem;
+    --fs-label-medium: 1.4rem;
+
+    /* line height */
+    --lh-headline-large: 40px;
+  }
+
+  /**
+   * REUSED STYLE
+   */
+
+   .btn {
+    height: 40px;
+    padding-inline: 30px;
+   }
+
+   .headline-large {
+    letter-spacing: 3px;
+   }
+
+   .container {
+    max-width: 992px;
+   }
+
+   /**
+    * HERO
+    */
+
+    .header-text-container {
+      margin-block-end: 32px;
+    }
+
+    .header-text-container .text {
+      width: 40ch;
+      text-align: left;
+      letter-spacing: 1px;
+      margin-inline: auto;
+      line-height: 18px;
+    }
+}
+
+ 
+ 
+
+
+/**
+ * responsive for larger than 1224px screen
+ */
+
+@media (min-width: 1224px) {
+
+  :root {
+
+    
+    /* font size */
+    --fs-label-medium: 1.4rem;
+    --fs-healine-large: 8rem;
+  }
+
+  /**
+   * REUSED STYLE
+   */
+
+   .container {
+    max-width: 1224px;
+   }
+
+   .header-text {
+    margin-inline: initial;
+   }
+
+   .header-text-container .text {
+    width: 44ch;
+    margin-inline: initial;
+   }
+
+   .btn {
+    margin-inline: initial;
+   }
+}
+
