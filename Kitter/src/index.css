@@ -258,6 +258,8 @@ body {
   gap: 30px;
 }
 
+.w-100 { width: 100%; }
+
 
 
 /*-----------------------------------*\
@@ -564,6 +566,27 @@ body {
 /*-----------------------------------*\
   #CTA
 \*-----------------------------------*/
+
+.cta { background-position: 75%; }
+
+.cta-banner { display: none; }
+
+.cta-content {
+  padding-block: var(--section-padding);
+  margin-block-start: 40px;
+}
+
+.cta .section-title {
+  text-align: left;
+  margin-block: 10px 20px;
+}
+
+.cta .section-text { margin-block-end: 30px; }
+
+.cta .btn:is(:hover, :focus) {
+  background-color: var(--white);
+  color: var(--black);
+}
 
 
 

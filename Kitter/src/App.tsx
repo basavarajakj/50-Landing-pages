@@ -1,4 +1,5 @@
 import Category from "./components/Category"
+import CallToAction from "./components/CTA"
 import Header from "./components/Header"
 import Hero from "./components/Hero"
 import Offers from "./components/Offers"
@@ -14,6 +15,7 @@ const App = () => {
       <Offers />
       <Product />
       <Services />
+      <CallToAction />
     </>
   )
 }
