@@ -42,19 +42,17 @@ const Offers = () => {
         <div className="grid-list">
 
           {OFFER_BANNER.map(offer => (
-            <li>
-                <div className="offer-card has-bg-image img-holder" style={{backgroundImage : `url(${offer.imageUrl})`, "--width" : 540, "--height": 374} as CSSProperties}>
+            <div key={offer.id} className="offer-card has-bg-image img-holder" style={{backgroundImage : `url(${offer.imageUrl})`, "--width" : 540, "--height": 374} as CSSProperties}>
 
-                  <p className="card-subtitle">{offer.cardSubtitle}</p>
+              <p className="card-subtitle">{offer.cardSubtitle}</p>
 
-                  <h3 className="h3 card-title">
-                    {offer.cardTitles.title1} <span className="span">{offer.cardTitles.title2}</span>
-                  </h3>
+              <h3 className="h3 card-title">
+                {offer.cardTitles.title1} <span className="span">{offer.cardTitles.title2}</span>
+              </h3>
+              <button className='btn'>Read More</button>
 
-                  <button className='btn'>Read More</button>
+            </div>
 
-                </div>
-            </li>
           ))}
 
         </div>

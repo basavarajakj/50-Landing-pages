@@ -53,7 +53,7 @@ const Header = () => {
 
         <button onClick={handleNavbarToggle} className="nav-toggle-btn" aria-label="toggle menu">
           {!toggleNavbar && (
-             <span className="material-symbols-outlined menu-icon">
+             <span className="material-symbols-rounded menu-icon">
                menu
              </span>
           )}
@@ -65,7 +65,7 @@ const Header = () => {
 
           <div className="navbar-header">
             <button onClick={handleNavbarToggle} className="nav-toggle-btn">
-              <span className="material-symbols-outlined close-icon">
+              <span className="material-symbols-rounded close-icon">
                 close
               </span>
             </button>
@@ -89,18 +89,18 @@ const Header = () => {
           <div className="action-btn" >
 
             <button className="action-btn" aria-label="search">
-              <span className="material-symbols-outlined">
+              <span className="material-symbols-rounded">
                 search
               </span>
             </button>
           </div>
             <button className="action-btn user" aria-label="user">
-              <span className="material-symbols-outlined">
+              <span className="material-symbols-rounded">
                 person
               </span>
             </button>
             <button className="action-btn" aria-label="cart">
-              <span className="material-symbols-outlined">
+              <span className="material-symbols-rounded">
                 shopping_cart
               </span>
               <span className="btn-badge">0</span>
