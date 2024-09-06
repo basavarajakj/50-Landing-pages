@@ -5,7 +5,7 @@ const NAVBAR_ITEM = [
     name: "Home"
   },
   {
-    name: "Shope"
+    name: "Shop"
   },
   {
     name: "Collections"

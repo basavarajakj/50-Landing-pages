@@ -572,7 +572,7 @@ body {
 .cta-banner { display: none; }
 
 .cta-content {
-  padding-block: var(--section-padding);
+  padding-block: 80px var(--section-padding);
   margin-block-start: 40px;
 }
 
@@ -595,6 +595,21 @@ body {
 /*-----------------------------------*\
   #BRAND
 \*-----------------------------------*/
+
+.brand { --section-padding: 100px; }
+
+.brand .has-scrollbar { gap: 0; }
+
+.brand .scrollbar-item { min-width: 50%; }
+
+.brand .scrollbar-item:not(:last-child) { border-inline-end: 1px solid var(--platinum); }
+
+.brand-card {
+  max-width: max-content;
+  margin-inline: auto;
+}
+
+
 
 
 
