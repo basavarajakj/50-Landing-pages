@@ -472,7 +472,7 @@ body {
   margin-block-end: 20px;
 }
 
-.product-card .img-holder:hover .img-cover {
+.product-card .img-holder:is(:hover, :focus-within) .img-cover {
   transform: scale(1.05);
   transition: transform var(--transition-2);
 }
@@ -541,7 +541,23 @@ body {
   #SERVICE
 \*-----------------------------------*/
 
+.service .img {
+  margin-inline: auto;
+  margin-block-end: 30px;
+}
 
+.service .section-title { margin-block-end: 60px; }
+
+.service-card { text-align: center; }
+
+.service-card .card-icon {
+  max-width: max-content;
+  margin-inline: auto;
+}
+
+.service-card .card-title { margin-block: 10px; }
+
+.service-card .card-text { color: var(--spanish-gray); }
 
 
 
