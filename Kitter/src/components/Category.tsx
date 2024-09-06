@@ -4,6 +4,7 @@ import category1 from '../assets/category-1.jpg';
 import category2 from '../assets/category-2.jpg';
 import category3 from '../assets/category-3.jpg';
 import category4 from '../assets/category-4.jpg';
+import category5 from '../assets/category-5.jpg';
 
 const CARD_CATEGORY_LIST = [
   {
@@ -25,6 +26,11 @@ const CARD_CATEGORY_LIST = [
     id: 4,
     imageUrl: category4,
     title: 'Dog Toys'
+  },
+  {
+    id: 5,
+    imageUrl: category5,
+    title: 'Dog Supplements'
   },
 ]
 
