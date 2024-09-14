@@ -1,5 +1,6 @@
 import Header from "./components/Header"
 import Hero from "./components/Hero"
+import Process from "./components/Process"
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
     <main>
       <article>
         <Hero />
+        <Process />
       </article>
     </main>
     </>
