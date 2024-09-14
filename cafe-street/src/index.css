@@ -359,7 +359,7 @@ span.material-symbols-rounded {
   'opsz' 24
 }
 
-.container { padding-inline: var(--space-4); }
+/* .container { padding-inline: var(--space-4); } */
 
 .main {
   padding-block-start: var(--top-app-bar-height);
