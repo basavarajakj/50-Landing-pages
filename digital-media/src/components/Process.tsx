@@ -48,7 +48,7 @@ const Process = () => {
             <img src={ProcessBanner} alt="process banner" loading='lazy' width="734" height="854" className="w-100" />
           </figure>
           
-          <ul className="gird-list">
+          <ul className="grid-list">
 
             {ProcessItems.map(item => (
               <li key={item.id} className="process-item">

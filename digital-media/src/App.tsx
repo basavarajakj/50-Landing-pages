@@ -1,6 +1,7 @@
 import Header from "./components/Header"
 import Hero from "./components/Hero"
 import Process from "./components/Process"
+import Work from "./components/Work"
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <article>
         <Hero />
         <Process />
+        <Work />
       </article>
     </main>
     </>
