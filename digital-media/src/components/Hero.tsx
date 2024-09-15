@@ -29,7 +29,7 @@ const Hero = () => {
 
         </div>
 
-        <figure className="hero-content">
+        <figure className="hero-banner">
 
           <img src={HeroBanner} className="w-100" width="875" height="960" alt="Hero Banner" />
 

@@ -111,11 +111,11 @@ const Footer = () => {
           <ul className="footer-bottom-list">
 
             <li>
-              <a href="#" className='footer-list'>Term of use</a>
+              <a href="#" className='footer-link'>Term of use</a>
             </li>
 
             <li>
-              <a href="#" className='footer-list'>Privacy policy</a>
+              <a href="#" className='footer-link'>Privacy policy</a>
             </li>
 
           </ul>
